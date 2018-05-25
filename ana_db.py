@@ -1,4 +1,3 @@
-
 import sqlite3
 from dime import *
 
@@ -81,6 +80,7 @@ class SQlite(AbstractRepo):
 
     def Close(self):
         self.conexion.close()
+        return 'Conexión cerrada correctamente'
 
 if __name__ == '__main__':
     v = Video("nombre diferente", "13", "canal de prueba", "07/05/2018", 53, 100, "un videito chido", id=3, categorias=['una', 'y dos'])
