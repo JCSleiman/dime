@@ -32,6 +32,7 @@ class AppYoutube(AbstractYoutube):
 
 if __name__ == '__main__':
     y = AppYoutube()
-    vid = y.InfoVideo('https://www.youtube.com/watch?v=j2KonMkk6To')
+    #https://www.youtube.com/watch?v=j2KonMkk6To
+    vid = y.InfoVideo('achettp://yutub.com/olakase')
 
     print(vid.Descripcion)
