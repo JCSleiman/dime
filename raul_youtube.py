@@ -28,10 +28,10 @@ class AppYoutube(AbstractYoutube):
         for result5 in results4.get('items', []):
             Duracion = result5['contentDetails']['duration']
 
-        return Video(Titulo, NombreCanal, Descripcion, Publicacion, Likes, Vistas, Duracion)
+        return Video(Titulo, Duracion, NombreCanal, Publicacion, Likes, Vistas, Descripcion)
 
 if __name__ == '__main__':
     y = AppYoutube()
-    vid = y.InfoVideo('https://www.youtube.com/watch?v=L688sHqXL2A')
+    vid = y.InfoVideo('https://www.youtube.com/watch?v=j2KonMkk6To')
 
-    print(vid.Nombre)
+    print(vid.Descripcion)
